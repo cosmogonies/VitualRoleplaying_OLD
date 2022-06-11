@@ -445,4 +445,4 @@ async def reload(ctx):
     await ctx.send("Cette fonction ne marche pas (encore)")
 
 
-bot.run('altereal@cosmogonies.net', 'C84TYXXLewDeJ9kg')
+bot.run(LOGIN, PASSWORD)
