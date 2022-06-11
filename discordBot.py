@@ -1,18 +1,16 @@
-# bot.py
 import os,sys,os.path,pprint
-import datetime
+import datetime, re
 
 print("="*20)
 print("discordBot.py START")
 
+#Additional custom tools:
 import discord
-#from dotenv import load_dotenv
-
 import diceManager
 
-import re
-
 #load_dotenv()
+
+PASSWORD = #INSERT here the clien password
 
 client = discord.Client()
 print('------')
@@ -240,9 +238,6 @@ async def doChallengeComplex(author, message):
         await message.channel.send(getNiceName(author)+' fait '+str(result))
 
 
-#client.run('ODkyNDk0MDQwNzE1NjM2ODM2.YVNt2Q.0N7pJnB6kIZJMUT2XmjrDsNgqKM') #alteral discord bot
-client.run('OTQ4MTI3ODY5Mzc5NDMyNTM4.Yh3S4w.e_DLCcAU1XYcrIl3AizaNxjXrwg') #Heredum Parisii discord bot
+client.run(PASSWORD)
 
 print("discordBot.py END")
-#https://discordapp.com/oauth2/authorize?client_id=948127869379432538&scope=bot
-#948127869379432538
